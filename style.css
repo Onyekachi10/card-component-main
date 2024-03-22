@@ -95,7 +95,7 @@ img.product {
     div.row {
         top: 55%;
         left: 50%;
-        width: 391px;
+        width: 323px;
     }
   
 img.product {display: none;}
@@ -103,8 +103,8 @@ img.product {display: none;}
 div.image{
     background: url("./images/image-product-mobile.jpg")no-repeat;
     background-size: contain;
-    width: 387px;
-    height: 271px;
+    width: 318px;
+    height: 233px;
     border-radius: 10px;
 }
     .column {float: left; width: 70%;}
