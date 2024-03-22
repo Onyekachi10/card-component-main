@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fraunces";
+    background-color: hsl(30, 38%, 92%);
+}
+
+div.row {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: white;
+    width: 660px;
+}
+
+img.product {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  h2 {
+    margin-top: 2pc;
+    margin-bottom: 2pc;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    opacity: 40%;
+  }
+
+  h1 {margin-bottom: 1pc; font-size: 40px;}
+
+  p.about {
+    opacity: 60%;
+    margin-bottom: 1pc;
+    font-weight: 400;
+  }
+
+  p.price {
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+    font-weight: bolder;
+    margin-bottom: 2pc;
+  }
+
+  span {
+    position: relative;
+    left: 10pc;
+    bottom: 4pc;
+    font-size: 15px;
+    opacity: 50%;
+    
+  }
+
+  input {
+    padding: 15px 20px;
+    width: 80%;
+    position: relative;
+    right: 2pc;
+    bottom: 1pc;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color:  hsl(158, 36%, 37%);
+    color: white;
+    letter-spacing: 3px;
+  }
+
+  img.cart {
+    position: relative;
+    bottom: 3pc;
+    left: 4pc;
+  }
+
+@media screen and (max-width:500px) and (min-width:300px) {
+    
+    div.row {
+        top: 55%;
+        left: 50%;
+        width: 391px;
+    }
+  
+img.product {display: none;}
+
+div.image{
+    background: url("./images/image-product-mobile.jpg")no-repeat;
+    background-size: contain;
+    width: 387px;
+    height: 271px;
+    border-radius: 10px;
+}
+    .column {float: left; width: 70%;}
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+     h2{ font-size: 14px;}
+
+    h1 {margin-bottom: 1pc; font-size: 25px; }
+
+    p.about,p.price,span, h1, h2 { margin-left: 2pc;}
+
+    p.price {font-size: 20px; }
+    
+      span {font-size: 10px;}
+
+      input { width: 100%;right: -2pc;}
+    
+      
+}
